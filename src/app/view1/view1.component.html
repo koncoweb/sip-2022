@@ -1,0 +1,18 @@
+<div class="column-layout group">
+  <div class="column-layout group_1">
+    <igx-list *ngFor="let item of beritaBeritaTerbaru" routerLink="/view2" class="list">
+      <igx-list-item [isHeader]="false" routerLink="/view2">
+        <span igxListThumbnail>
+          <igx-avatar [src]="item.gambar_fitur" [roundShape]="true"></igx-avatar>
+        </span>
+        <span igxListLineTitle>{{ item.judul }}</span>
+        <span igxListLineSubTitle>{{ item.kategori }}</span>
+        <span igxListAction>
+          <igx-icon class="icon">
+            local_library
+          </igx-icon>
+        </span>
+      </igx-list-item>
+    </igx-list>
+  </div>
+</div>

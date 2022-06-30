@@ -1,0 +1,6 @@
+<div class="column-layout group">
+  <h5 *ngFor="let item of beritaBeritaTerbaru" class="h5">
+    {{ item.judul }}
+  </h5>
+  <img [src]="item.gambar_fitur" *ngFor="let item of beritaBeritaTerbaru" class="image" />
+</div>
